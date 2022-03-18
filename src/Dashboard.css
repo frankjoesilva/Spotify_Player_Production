@@ -1,0 +1,114 @@
+div.d-flex.flex-column.py-2 {
+    /* width:90%; */
+}
+
+div.text-center{
+    color:limegreen;
+}
+
+p.text-center.card-text {
+    color:limegreen;
+    
+}
+
+
+.lyrics-container {
+display:flex;
+flex-direction:column; 
+position:fixed; 
+margin-left:-27px;
+}
+
+
+div.card-img-overlay{
+    background-image: url("./assets/img/backgroundImg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.lyrics{
+    margin-top:25px;
+    overflow-y:scroll;
+    overscroll-behavior:contain;
+    max-height:65vh; 
+}
+
+.lyrics-backdrop{
+    background-color:rgba(119, 116, 116, 0.7);
+}
+
+
+p.text-center.card-text {
+    font-size:15px;
+}
+
+.form-control:not(active){
+    background-color:black;
+    border:3px solid rgb(182, 58, 182);
+    color:grey;
+ }
+
+ .form-control:focus{
+    background-color:black;
+    border:3px solid rgb(182, 58, 182);
+    color:grey;
+ }
+
+ .search-results{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(110,9,121,1) 52%, rgba(16,147,108,1) 86%);
+}
+
+::-webkit-scrollbar {
+    width: 0;  
+}
+
+#root{
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(110,9,121,1) 52%, rgba(16,147,108,1) 86%);
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3){
+      .lyrics{
+          max-width: 380px;
+          max-height: 400px;
+          overscroll-behavior:contain;
+      }
+
+      p.text-center.card-text {
+        font-size: 14px;
+        font-family:Helvetica;
+    }
+
+    div.d-flex.flex-column.py-2.container {
+        max-height: 90vh;
+        display:flex;
+        flex-grow: 1;
+    }
+
+
+    @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .lyrics{
+        max-width: 380px;
+    }
+
+    p.text-center.card-text {
+      font-size: 14px;
+      display:flex;
+      justify-content: center; 
+      font-family:Helvetica;
+  }
+}
+  }
+
+
+
+
+

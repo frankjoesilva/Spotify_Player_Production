@@ -1,0 +1,40 @@
+
+.login {
+    display: grid;
+    background-color: black;
+    height: 100vh;
+    place-items: center;
+}
+
+.login > img {
+height:200px;
+width:auto;
+}
+
+.login > a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 99px;
+    font-weight: 800;
+    background-color: #1db954;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3){
+   
+    .login > img {
+        height:100px;
+        width:auto;
+        }
+
+  }
+
+    @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+  }
