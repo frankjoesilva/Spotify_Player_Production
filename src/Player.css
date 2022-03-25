@@ -1,16 +1,17 @@
 div._ContentRSWP {
     border-radius:5px;
-    background-color:black;
-}
-
-.__77inad p:last-child a {
-    color: limegreen;
+    background-color:black !important;
 }
 
 .__77inad p a {
-    color: rgb(182, 58, 182);
+    color: rgb(182, 58, 182) !important;
 }
 
+.__77inad p:last-child a {
+    color: limegreen !important;
+}
+
+
 .__1q9n52d button {
-    color: rgb(182, 58, 182);
+    color: rgb(182, 58, 182) !important;
 }
