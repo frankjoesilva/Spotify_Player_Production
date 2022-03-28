@@ -20,7 +20,9 @@ div.card-img-overlay{
     background-image: url("./assets/img/backgroundImg.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position:center;
     background-attachment: fixed;
+    object-fit: contain;
 }
 
 .lyrics{
