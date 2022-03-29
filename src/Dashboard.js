@@ -5,7 +5,7 @@ import { Container, Form, Card, } from 'react-bootstrap'
 import SpotifyWebApi from 'spotify-web-api-node'
 import Player from './Player'
 import axios from 'axios'
-import KeepAwake from 'react-native-keep-awake'
+import { useKeepAwake } from '@sayem314/react-native-keep-awake';
 import './Dashboard.css'
 
 
@@ -16,6 +16,7 @@ const spotifyApi = new SpotifyWebApi({
 
 
 export default function Dashboard({ code }) {
+    useKeepAwake()
     const accessToken = useAuth(code)
     const [search, setSearch] = useState('')
     const [searchResults, setSearchResults] = useState([])
@@ -77,6 +78,8 @@ export default function Dashboard({ code }) {
         return () => cancel = true
     }, [search, accessToken])
 
+
+
     return (
         <Container className="d-flex flex-column py-2" style={{
             height: '100vh',
@@ -129,7 +132,6 @@ export default function Dashboard({ code }) {
                 )}
             </div>
             <div> <Player accessToken={accessToken} trackUri={playingTrack?.uri} /> </div>
-            <KeepAwake />
         </Container>
     )
 }
