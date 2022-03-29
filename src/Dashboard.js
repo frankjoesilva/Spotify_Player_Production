@@ -5,6 +5,7 @@ import { Container, Form, Card, } from 'react-bootstrap'
 import SpotifyWebApi from 'spotify-web-api-node'
 import Player from './Player'
 import axios from 'axios'
+import KeepAwake from 'react-native-keep-awake'
 import './Dashboard.css'
 
 
@@ -128,6 +129,7 @@ export default function Dashboard({ code }) {
                 )}
             </div>
             <div> <Player accessToken={accessToken} trackUri={playingTrack?.uri} /> </div>
+            <KeepAwake />
         </Container>
     )
 }
